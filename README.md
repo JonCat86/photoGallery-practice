@@ -1,4 +1,4 @@
-<h3><a href="https://joncat86.github.io/devChallenge-MyGallery/">
+<h3><a href="https://joncat86.github.io/photoGallery-practice/">
       Demo
     </a></h3>
 
