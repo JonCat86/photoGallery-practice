@@ -20,6 +20,7 @@ class PhotoGallery {
       this.getSearchedImg(e);
     });
     this.btn.addEventListener("click", (e) => {
+      e.preventDefault();
       this.showMore(e);
     });
     document.addEventListener("click", (e) => {
@@ -82,14 +83,16 @@ class PhotoGallery {
     this.imgGenerator(searchedData);
   }
   //SHOW-MORE
-  showMore(e) {
+  async showMore(e) {
+    e.target.disabled = true;
     this.pageIndex = ++this.pageIndex;
     const btnAtt = e.target.getAttribute("data-img");
     if (btnAtt === "curated") {
-      this.getImg(this.pageIndex);
+      await this.getImg(this.pageIndex);
     } else {
-      this.getMoreSearchedImg();
+      await this.getMoreSearchedImg();
     }
+    e.target.disabled = false;
   }
   //MODAL IMAGE
   modalImage(e) {
