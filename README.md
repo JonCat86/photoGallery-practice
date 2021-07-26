@@ -1,3 +1,7 @@
+<h3><a href="https://joncat86.github.io/devChallenge-MyGallery/">
+      Demo
+    </a></h3>
+
 # photoGallery-practice
 A simple photo gallery with HTML, CSS and JS.
 
